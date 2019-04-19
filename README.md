@@ -109,7 +109,11 @@ Reference: https://en.wikipedia.org/wiki/X.509#Structure_of_a_certificate
 
 # Keystore vs Truststore
 
+Keystore is used to store own certificate while truststore is used to store certificates from trusted parties like like those issued by CAs.
+Keystore is also used to store the private keys for the host machine.
+Java ships its own truststore (collection of certificate from well known CA like Verisign, goDaddy, thwarte etc.). And this truststore can be found in the file JAVA_HOME/JRE/Security/cacerts where JAVA_HOME is the JDK Installation directory.
 
 
+Reference: http://www.java67.com/2012/12/difference-between-truststore-vs.html
 
 
